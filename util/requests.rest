@@ -1,0 +1,22 @@
+POST http://localhost:8080/login
+
+###
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+    "username" : "admin123"
+}
+
+###
+
+GET http://localhost:8080/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWRtaW4xMjMiLCJpYXQiOjE2Mzc0MTkyNDEsImV4cCI6MTYzNzQxOTI3MX0.PryMD0hJHgeO7GpgIesqnHo9LYFF7BRl-3FF1umEHUU
+###
+
+POST http://localhost:8080/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWRtaW4xMjMiLCJpYXQiOjE2Mzc0MTkyMDh9.t-Aw7jWy6LEuZA7ZYdMCUV7siNwWtORMNYGIToy8nd8"
+}
